@@ -1,0 +1,132 @@
+<!Doctype html>
+<html lang="en">
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Se realizan clases de conduccion teoricas y practicas a domicilio en Santiago, todas las comunas." />
+		<meta name="author" content="Pablo Estobar"/>
+		<title>Clase de Conduccion a Domicilio</title>
+		
+		<link rel="stylesheet" type="text/css" href="nav_bar.css">
+		<link rel="stylesheet" type="text/css" href="image_crop.css">
+		<link rel="stylesheet" type="text/css" href="box.css">
+		<link rel="stylesheet" type="text/css" href="li_style.css">
+	</head>
+	<body>
+			<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+			<script>
+			  // Initialize Firebase
+			  var config = {
+				apiKey: "AIzaSyAE1nvcLBEMEn_Ry1wOX63AqSVfA_uk8bI",
+				authDomain: "renemanejando.firebaseapp.com",
+				databaseURL: "https://renemanejando.firebaseio.com",
+				projectId: "renemanejando",
+				storageBucket: "renemanejando.appspot.com",
+				messagingSenderId: "928545057585"
+			  };
+			  firebase.initializeApp(config);
+			</script>
+	<nav id="navbar">
+		<a class="active" href="index.html">Clases de Conduccion a Domicilio</a>
+		<a href="#f_box">Curso</a>
+		<a href="#s_box">Incluye</a>
+		<a href="#t_box">Contacto</a>
+	</nav>
+	
+	<div class="content">
+		<div id="container">
+			<h1 style="margin: 13px 0px 13px 200px;"><a style = "text-decoration: none; font-family: Arial; font-color: black; font-size: 30px;" href="https://www.instagram.com/rene_manejando/?hl=es">Rene_manejando</a></h1>
+			<div id="sub_container">
+				<figure>
+					<img src="Imagenes/Imagen 1.png">
+				</figure>
+				<figure>
+					<img src="Imagenes/Imagen 2.png">
+				</figure>
+				<figure>
+					<img src="Imagenes/Imagen 3.png">
+				</figure>
+				<figure>
+					<img src="Imagenes/Imagen 4.png">
+				</figure>
+				<figure>
+					<img src="Imagenes/Imagen 5.png">
+				</figure>
+				<figure>
+					<img src="Imagenes/Imagen 6.png">
+				</figure>
+			</div>
+		</div>
+	</div>
+	
+	<script>
+	window.onscroll = function() {myFunction()};
+
+	var navbar = document.getElementById("navbar");
+	var sticky = navbar.offsetTop;
+
+	function myFunction() {
+		if (window.pageYOffset >= sticky) {
+			navbar.classList.add("sticky")
+		}
+		else {
+			navbar.classList.remove("sticky");
+		}
+	}
+	</script>
+	
+	<div class="box" id="f_box">
+		<h1 style="font-size: 35px;">Curso</h1>
+		<p>
+			<div id="div_box">
+				<div class="main_lu"><img src="Icons/Icon 1.png" id="imgen"><span>12 clases practicas de 45 minutos</span></div>
+				<div class="main_lu"><img src="Icons/Icon 2.png" id="imgen"><span>1 hora de clases diarias</span></div>
+				<div class="main_lu"><img src="Icons/Icon 3.png" id="imgen"><span>Clases de Lunes a Viernes</span></div>
+				<div class="main_lu"><img src="Icons/Icon 4.png" id="imgen"><span>Clases a domicilio o lugar de trabajo</span></div>
+				<div class="main_lu"><img src="Icons/Icon 5.png" id="imgen"><span>Automóviles equipados con doble comando</span></div>
+			</div>
+			<div id="div_box">
+				<div class="main_lu"><img src="Icons/Icon 6.png" id="imgen"><span>Práctica desde el primer día en el auto - escuela</span></div>
+				<div class="main_lu"><img src="Icons/Icon 7.png" id="imgen"><span>Clases 100% personalizadas</span></div>
+				<div class="main_lu"><img src="Icons/Icon 8.png" id="imgen"><span>Instructor profesional acreditado por Carabinero de Chile</span></div>
+				<div class="main_lu"><img src="Icons/Icon 9.png" id="imgen"><span>Se realizan cursos intensivos y normales</span></div>
+				<div class="main_lu"><img src="Icons/Icon 10.png" id="imgen"><span>Horario por elección del alumnos</span></div>
+			</div>
+		</p>
+	</div>
+	<div class="navbar_expansion_box" id="f_navbar_expansion_box"></div>
+	<div class="box" id="s_box">
+		<h2 style="font-size: 30px;">Incluye</h2>
+		<p>
+			<ul>
+				<li>Entrega de un completo material teorico</li></br>
+				<li>Libro del nuevo conductor</li></br>
+				<li>Evaluación y reforzamiento teórico durante la práctica</li></br>
+				<li>Se realizan recorridos especiales a lugares determinados</li></br>
+			</ul>
+		</p>
+		<div class="incluye_imagen_container">
+			<img id="incluye_imagen" src="imagenes 2/imagen 1.png">
+		</div>
+	</div>
+	<div class="navbar_expansion_box" id="s_navbar_expansion_box"></div>
+	<div class="box" id="t_box">
+		<h3 style="font-size: 30px;">Contacto</h3>
+		<p>
+			<ul>
+				<li>Rene.estobar@hotmail.com</li></br>
+				<li>+56 9 9519 8272</li></br>
+				<li>@rene_manejando</li></br>
+			</ul>
+		</p>
+		<h3>Ofrecemos servicios</h3>
+		<p>
+			<ul>
+				<li>Clases de reforzamiento y/o preparación para el examen</li></br>
+				<li>Clases de reforzamiento especiales para conductores</li></br>
+			</ul>
+		</p>
+	</div>
+	<div class="navbar_expansion_box" id="t_navbar_expansion_box"></div>
+	</body>
+</html>

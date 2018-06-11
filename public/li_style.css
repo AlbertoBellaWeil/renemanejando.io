@@ -1,0 +1,13 @@
+.main_lu {
+	height: 40px;
+	display: flex;
+	align-items: center;
+	margin: 30px 0px 30px 0px;
+}
+
+#imgen {
+	margin: 0px 20px 0px 0px;
+	float: left;
+	height: 40px;
+	width: auto;
+}
